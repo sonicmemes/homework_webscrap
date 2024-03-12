@@ -2,8 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import re
+from logger import logger
 
-
+@logger('my_log.log')
 def parse_vacancies():
     print('starting scrap process')
     i = 0
